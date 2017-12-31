@@ -1,0 +1,15 @@
+/*
+logo styling
+*/
+
+.logo{
+	width: 50px !important;
+    float: left;
+    margin-top: -5px;
+}
+
+.navbar-brand{
+	align: center;
+	font-size: 25px;
+    line-height: 40px;
+}

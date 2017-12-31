@@ -1,0 +1,31 @@
+.container-default{
+min-height:780px;
+}
+
+.sidebar .dropdown{
+height:62px;
+}
+
+ul.dropdown-menu.ddn-left {
+    margin-left: -106px;
+}
+
+.col-lg-3.tiles{
+	min-height:100px;
+	color:#fff !important;
+	text-align:Center;
+	width:24%;
+	transition:0.5s;
+}
+
+
+.col-lg-3.tiles h1{
+	margin:10px 5px 5px 5px;
+}
+.col-lg-3.tiles a,.col-lg-3.tiles i,.col-lg-3.tiles h3{
+	color:#fff;
+}
+
+.col-lg-3.tiles:hover{
+	background:#e74c3c;
+}
