@@ -23,6 +23,7 @@ public function index()
 		$data['twitter']					=	$this->lib->get_settings('twitter');
 		$data['instagram']					=	$this->lib->get_settings('instagram');
 		$data['skype']						=	$this->lib->get_settings('skype');
+		$data['corporate_office_address']					=	$this->lib->get_settings('corporate_office_address');
 		$data['address']					=	$this->lib->get_settings('address');
 		$data['logo']						=	$this->lib->get_settings('logo');
 		$data['email_name']					=	$this->lib->get_settings('sending_email_name');

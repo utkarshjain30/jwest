@@ -30,6 +30,8 @@ $(document).ready(function() {
  	filebrowserImageUploadUrl : '<?php echo base_url() ?>static/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
  	filebrowserFlashUploadUrl : '<?php echo base_url() ?>static/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
 					});
+
+       
 					
 
 			//]]>

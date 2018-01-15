@@ -137,6 +137,18 @@
 			<div class="clearfix"></div>
 			<br>
 
+
+			<!--Corporate Address-->
+			<div class="form-group">
+				<label class="col-lg-3">Corporate Office Address</label>
+				<div class="col-lg-5"><input type="text" class="form-control" id="corporate_office_address" value="<?php echo $corporate_office_address;?>"></div>
+				<div class="col-lg-1"><span id="save_corporate_office_address" class="btn btn-primary btn-icon "><i class="fa fa-save"></i> Save</span></div>
+				<div class="col-lg-3" id="msg_corporate_office_address"></div>
+			</div>
+			<div class="clearfix"></div>
+			<br>
+
+
 			<!--ADDRESS-->
 
 			<div class="form-group">
@@ -325,6 +337,26 @@
 			});
 			return false;
 		});
+
+		//CORPORATE ADDRESS SAVE
+
+		$('#save_corporate_office_address').click(function () {
+			$("#msg_corporate_office_address").html("<i class='fa fa-spinner fa-pulse fa-fw'></i>Please wait...");
+			var corporate_office_address = $('#corporate_office_address').val();
+		
+			var data='value='+corporate_office_address;
+			$.ajax({
+				type:"POST",
+				url:"<?php echo base_url('admin/settings/save_settings/corporate_office_address')?>",
+				data:data,
+				success:function(html) {
+				$("#msg_corporate_office_address").html(html);
+				}
+			});
+			return false;
+		});
+
+
 
 		//ADDRESS SAVE
 

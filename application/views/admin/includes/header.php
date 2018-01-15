@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Modern is a Premium Bootstrap Admin Template, It's responsive, clean coded and mobile friendly">
   <meta name="keywords" content="<?php if(isset($keywords)){ echo $keywords;}else{ echo $this->lib->get_settings('meta_keywords');}?>" />
-  <title><?php if(isset($title)){ echo $title;}?></title>
+  <title>Jwest Admin : <?php if(isset($title)){ echo $title;}?></title>
 
   <!-- ========== Css Files ========== -->
   <link href="<?php echo base_url('static/admin/css/root.css')?>" rel="stylesheet">

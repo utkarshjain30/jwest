@@ -15,7 +15,8 @@ class Colors extends CI_Controller {
 		$data['title']		=	'Colors';
 		$data['heading']	=	'Colors';
 		$data['icon']		=	'fa fa-paint-brush';
-		
+		$data['product_color_image_h']		=	$this->lib->get_settings('product_color_image_h');
+		$data['product_color_image_w']		=	$this->lib->get_settings('product_color_image_w');
 		$data['colors']      =   $this->lib->get_table('product_colors',array('id'=>'asc'),NULL,50);
 
 		$this->load->view('admin/includes/header',$data);
@@ -30,6 +31,26 @@ class Colors extends CI_Controller {
 		if(!$data){
 			$this->lib->redirect_msg('Please enter color details to add','warning','admin/colors');
 		}
+
+
+		if (!is_dir('static/images/product_colors/')) {
+			mkdir('static/images/product_colors/',777);
+		}
+			
+		if($_FILES!=''){
+			
+			$path           =   'static/images/product_colors/';
+			$upload_file	=	$this->lib->upload_file($path,'color_image');
+			$img_orignal	=	getimagesize($upload_file);
+			$width			=	$this->lib->get_settings('product_color_image_w');
+			$height			=	$this->lib->get_settings('product_color_image_h');
+			$resized		=	$this->lib->image_resize($upload_file,NULL,$height);
+		
+		}else{
+			$this->lib->redirect_msg('Unable to read image, please try again with correct fornat','success','admin/testimonials');
+		}
+
+		$data['color_image']	=	$upload_file;
 		
 		$insert	=	$this->db->insert('product_colors',$data);
 		if($insert){

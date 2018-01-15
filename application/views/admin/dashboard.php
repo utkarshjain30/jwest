@@ -16,16 +16,16 @@
 		<div class="col-lg-12 dashboard">
 			
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-				<a href="<?php echo base_url('admin/videos')?>"><div class="padding-5 margin-5 panel-warning tiles">
-					<h1><i class="fa fa-video-camera fa-2x"></i></h1>
-					<h3> Videos</h3>
+				<a href="<?php echo base_url('admin/products')?>"><div class="padding-5 margin-5 panel-warning tiles">
+					<h1><i class="fa fa-shopping-bag fa-2x"></i></h1>
+					<h3> Products</h3>
 				</div></a>
 			</div>
 			
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-				<a href="<?php echo base_url('admin/users')?>"><div class="padding-5 margin-5 panel-success tiles">
+				<a href="<?php echo base_url('admin/admin_users')?>"><div class="padding-5 margin-5 panel-success tiles">
 					<h1><i class="fa fa-users fa-2x"></i></h1>
-					<h3>10 Users</h3>
+					<h3>Admin</h3>
 				</div></a>
 			</div>
 			
@@ -33,9 +33,9 @@
 			<div class="clearfix"></div>
 			
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
-				<a href="<?php echo base_url('admin/notify')?>"><div class="padding-5 margin-5 panel-info tiles">
+				<a href="<?php echo base_url('admin/testimonials')?>"><div class="padding-5 margin-5 panel-info tiles">
 					
-					<h3> <i class="fa fa-bell fa-fw fa-lg"></i> Notification</h3>
+					<h3> <i class="fa fa-bell fa-fw fa-lg"></i> Testimonials</h3>
 				</div></a>
 			</div>
 			

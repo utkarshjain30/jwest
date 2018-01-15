@@ -14,7 +14,7 @@
 	<div class="clearfix"></div>
 		<div class="panel panel-default col-lg-4 margin-10">
 		<h3>Add New Color</h3>
-			<form class="form" action="<?php echo base_url('admin/colors/add')?>" method="post">
+			<form class="form" action="<?php echo base_url('admin/colors/add')?>" enctype="multipart/form-data" method="post">
 				<div class="form-group">
 					<label>Color Name</label>
 					<input type="text" class="form-control" name="color_name" required placeholder="Enter Color Name" autofocus>
@@ -27,6 +27,12 @@
 				
 				<div class="form-group">
 					<label>Color Image</label>
+					<p class="help-block">Please select image of height : <?php echo $product_color_image_h?>px and width <?php echo $product_color_image_w?> px</p>
+						<input type="file" accept="image/*" class="hidden" id="file_select" name="color_image">
+						<span class="btn btn-default" onclick="$('#file_select').click();"><i class="fa fa-upload"></i> Select file</span>
+						<div style="margin:10px auto">
+							<img src="http://placehold.it/21x21?text=Preview" id="preview" style='max-width: 275px;' height="auto">
+						</div>
 				</div>
 
 				<div class="form-group">

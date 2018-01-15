@@ -13,6 +13,8 @@ $admin_info	=	$this->session->userdata('admin');
 
   <li><a href="<?php echo base_url('admin/menu')?>"><span class="icon color5"><i class="fa fa-bars fa-fw"></i></span>Home Page Menu</a></li>
 
+  <li><a href="<?php echo base_url('admin/news')?>"><span class="icon color5"><i class="fa fa-newspaper-o fa-fw"></i></span>News</a></li>
+
   <li><a href="<?php echo base_url('admin/products')?>"><span class="icon color5"><i class="fa fa-shopping-bag fa-fw"></i></span>Products</a></li>
 
   <li><a href="<?php echo base_url('admin/categories')?>"><span class="icon color5"><i class="fa fa-list fa-fw"></i></span>Product Categories</a></li>
@@ -20,6 +22,8 @@ $admin_info	=	$this->session->userdata('admin');
   <li><a href="<?php echo base_url('admin/sizes')?>"><span class="icon color5"><i class="fa fa-arrows-alt fa-fw"></i></span>Product Sizes</a></li>
 
   <li><a href="<?php echo base_url('admin/colors')?>"><span class="icon color5"><i class="fa fa-paint-brush fa-fw"></i></span>Product Colors</a></li>
+
+  <li><a href="<?php echo base_url('admin/tags')?>"><span class="icon color5"><i class="fa fa-paint-brush fa-fw"></i></span>Product Tags</a></li>
 
   <li><a href="<?php echo base_url('admin/pages')?>"><span class="icon color5"><i class="fa fa-file-o fa-fw"></i></span>Pages</a></li>
 
@@ -33,9 +37,14 @@ $admin_info	=	$this->session->userdata('admin');
 
   <li class="sidetitle">Settings</li>
   <div class="slide_toggel_settings">
-  <li><a href="<?php echo base_url('admin/sliders')?>"><span class="icon color6"><i class="fa fa-picture-o"></i></span>Home Page Sliders</a></li>
-  <li><a href="<?php echo base_url('admin/settings')?>"><span class="icon color6"><i class="fa fa-sliders"></i></span>Settings</a></li>
-  <li><a href="<?php echo base_url('admin/admin_users')?>"><span class="icon color6"><i class="fa fa-black-tie"></i></span>Administrators</a></li>
+
+    <li><a href="<?php echo base_url('admin/sliders')?>"><span class="icon color6"><i class="fa fa-picture-o"></i></span>Home Page Sliders</a></li>
+
+    <li><a href="<?php echo base_url('admin/banners')?>"><span class="icon color6"><i class="fa fa-picture-o"></i></span>Home Page Banners</a></li>
+
+    <li><a href="<?php echo base_url('admin/settings')?>"><span class="icon color6"><i class="fa fa-sliders"></i></span>Settings</a></li>
+
+    <li><a href="<?php echo base_url('admin/admin_users')?>"><span class="icon color6"><i class="fa fa-black-tie"></i></span>Administrators</a></li>
   <?php 
   /*
   <li><a href="<?php echo base_url('admin/logs')?>"><span class="icon color6"><i class="fa fa-list"></i></span>API Logs</a></li>
